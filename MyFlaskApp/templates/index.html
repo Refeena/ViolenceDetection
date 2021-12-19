@@ -1,29 +1,29 @@
-<!DOCTYPE html>
+<!DOCTYPE>
 <html>
 <head>
-<link rel="stylesheet" href="../static/style.css">
-<title> Violence Detection system </title>
+<link rel="stylesheet" href="./static/style1.css">
+<title>Detect Violence in video</title>
 </head>
 <body>
-  <body>
-    <div class="login-page">
-      <div class="form">
-        <div class="login">
-          <div class="login-header">
-            <h3>Violence Detection System</h3>
-            <p>Please Select the Video</p>
-          </div>
-        </div>
-        <form class="login-form" action="/success" enctype="multipart/form-data" method="POST">
-          <input type="file" name="file"/>
 
-          <button type="submit">Show Result</button>
 
-        </form>
-      </div>
+<img class="img1" src="./static/webimg.jpg" hspace="50" >
+<div class="mainhead">
+<h1>Detect Violence in video</h1>
+<p  >This project implements MobileNet model,
+in combination with
+LSTM detecting violent scenes in a video stream
+This project proposes a new deep learning model that uses the concept of transfer learning for violence
+detection and also identifies the aggressive individuals by learning the detailed features in the videos.
+The features extracted from the MobileNet pre-trained model proved to be effective for detecting violence. MobileNet model,
+in combination with LSTM, yielded an accuracy of 94.4% and thereby, proving its superiority over other experimented ImageNet models. </p>
+<div class="form" ><form class="front" action="/success"  enctype="multipart/form-data" method="POST">
+select a file to predict
+<input type="file" class="cbutton" name="file"  />
+<button type="submit">perform inference</button>
+</form>
+</div>
     </div>
 </body>
-</body>
 </html>
-
 
